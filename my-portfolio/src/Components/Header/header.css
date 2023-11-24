@@ -1,0 +1,74 @@
+.appHeaderContainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100vw;
+  color: white;
+  font-size: x-large;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.welcomeMessage {
+  align-self: end;
+}
+
+.profilePic{
+    height: 30vh;
+    width: auto;
+    border-radius: 15px;
+}
+
+.welcomButton {
+  color: #0f2027;
+  font-size: 40px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  text-align: center;
+  padding: 2vh 4vh 2vh 4vh;
+  display: inline-block;
+  box-shadow: 0px 0px 10px 10px inset #0f2027;
+}
+
+.welcomButton span {
+  display: inline-block;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.welcomButton:hover span {
+  animation: wave 1s 0.1s infinite;
+  transform-origin: 75% 75%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(16deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(16deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(16deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
