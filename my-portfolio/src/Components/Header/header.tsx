@@ -1,17 +1,9 @@
-import "./header.css";
+import "./Header.css";
 
-interface HeaderProps {
-  welcomeMessage: string;
-}
-
-const Header = ({ welcomeMessage }: HeaderProps) => {
+const Header = () => {
   return (
     <div className="appHeaderContainer">
-      <h1 className="welcomeMessage">{welcomeMessage}</h1>
-      <img className="profilePic" src="Niro_Ravi.jpg" alt="profilePicture"/>
-      <button className="welcomButton">
-        Enter <span>&#128073;&#127999;</span>
-      </button>
+        <img className="profilePic pointer" src="NR.png" alt="profilePicture" />
     </div>
   );
 };

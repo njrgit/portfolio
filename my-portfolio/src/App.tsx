@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
-import Header from "./Components/Header/header";
-
-const welcomeMessage = "Niro's World"
+import Header from "./Components/Header/Header";
+import ParticlesBg from "particles-bg";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header welcomeMessage={welcomeMessage} />
+        <ParticlesBg type="thick" bg={true} />
+        <Header/>
       </div>
     );
   }
