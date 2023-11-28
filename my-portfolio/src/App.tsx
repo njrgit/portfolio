@@ -1,15 +1,16 @@
 import React from "react";
 import "./App.css";
-import Header from "./Components/Header/Header";
-import ParticlesBg from "particles-bg";
+import { Outlet } from "react-router-dom";
+import HomePage from "./Components/HomePage/HomePage";
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <ParticlesBg type="thick" bg={true} />
-        <Header/>
-      </div>
+      <>
+        <div className="App">
+          <Outlet />
+        </div>
+      </>
     );
   }
 }

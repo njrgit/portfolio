@@ -1,16 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import 'tachyons'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import "tachyons";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomePage from "./Components/HomePage/HomePage";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import ParticlesBg from "particles-bg";
+import App from "./App";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <LandingPage />,
+      },
+      {
+        path: "/home",
+        element: <HomePage />,
+      },
+    ],
+  },
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <ParticlesBg type="thick" bg={true} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
