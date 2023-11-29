@@ -6,7 +6,6 @@ import "tachyons";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import LandingPage from "./Components/LandingPage/LandingPage";
-import ParticlesBg from "particles-bg";
 import App from "./App";
 
 const root = ReactDOM.createRoot(
@@ -32,7 +31,6 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-    <ParticlesBg type="thick" bg={true} />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

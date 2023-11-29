@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.9;
+  overflow: hidded;
+  top: 0;
+  position: fixed;
+}
+
+.nr-logo {
+  height: 7vh;
+  border-radius: 15px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  justify-self: flex-end;
+  font-size: x-large;
+  font-weight: 400;
+  margin-right: 2rem;
+}
+
+.nav-links-to-end{
+    margin-left: auto;
+}
