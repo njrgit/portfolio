@@ -7,7 +7,7 @@ const NavBar = () => {
       <Link to={`/home`} className="ml2">
         <img src="NR.png" alt="nr-logo" className="nr-logo" />
       </Link>
-      <Link to={`/About`} className="nav-links nav-links-to-end link dim">
+      <Link to={`/AboutMe`} className="nav-links nav-links-to-end link dim">
         About Me
       </Link>
       <Link to={`/Contact`} className="nav-links link dim">

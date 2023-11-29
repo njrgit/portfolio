@@ -8,6 +8,7 @@ import HomePage from "./Components/HomePage/HomePage";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import App from "./App";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <HomePage />,
+      },
+      {
+        path: "/AboutMe",
+        element: <AboutMe />,
       },
     ],
   },
