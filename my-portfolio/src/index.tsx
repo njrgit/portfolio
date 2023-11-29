@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import App from "./App";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "",

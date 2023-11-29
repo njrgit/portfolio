@@ -10,6 +10,9 @@ const NavBar = () => {
       <Link to={`/About`} className="nav-links nav-links-to-end link dim">
         About Me
       </Link>
+      <Link to={`/Contact`} className="nav-links link dim">
+        Career
+      </Link>
       <Link to={`/Projects`} className="nav-links link dim">
         Projects
       </Link>

@@ -1,19 +1,21 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  height: 10vh;
+  height: auto;
   width: 100vw;
   background-color: black;
   opacity: 0.9;
   overflow: hidded;
   top: 0;
   position: fixed;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .nr-logo {
-  height: 7vh;
+  height: 5em;
   border-radius: 15px;
 }
 
