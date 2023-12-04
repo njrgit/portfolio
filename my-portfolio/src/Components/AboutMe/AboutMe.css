@@ -1,0 +1,33 @@
+.aboutMeContainer {
+  margin-top: 5vh;
+  height: auto;
+  display: grid;
+  color: white;
+  gap: 2vh ;
+}
+
+.profileFacePicGridItem {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.profileFacePic {
+  height: 30vh;
+  border-radius: 15px;
+}
+
+.grid-item{
+  grid-row: span 1;
+  grid-column: span 1;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.grid-item-last{
+  grid-row: span 1;
+  grid-column: span 2;
+  align-self: center;
+  justify-self: center;
+}
+

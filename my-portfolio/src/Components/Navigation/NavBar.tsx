@@ -4,7 +4,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <div className="navbar">
-      <Link to={`/home`} className="ml2">
+      <Link to={``} className="ml2">
         <img src="NR.png" alt="nr-logo" className="nr-logo" />
       </Link>
       <Link to={`/AboutMe`} className="nav-links nav-links-to-end link dim">

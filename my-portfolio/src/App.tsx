@@ -8,9 +8,9 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <ParticlesBg type="thick" bg={true} />
-        <NavBar />
         <div className="App">
+          <ParticlesBg type="thick" bg={true} />
+          <NavBar />
           <Outlet />
         </div>
       </>
