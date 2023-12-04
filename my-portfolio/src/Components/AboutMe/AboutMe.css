@@ -1,5 +1,7 @@
 .aboutMeContainer {
   margin-top: 5vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
   height: auto;
   display: grid;
   color: white;
