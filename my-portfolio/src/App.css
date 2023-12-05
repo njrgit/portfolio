@@ -6,8 +6,9 @@
 .App {
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow: auto;
   z-index: -1;
+  height: 100vh;
 }
 
 

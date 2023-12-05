@@ -1,15 +1,11 @@
 .appHeaderContainer {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 100vw;
   color: white;
   font-size: x-large;
-  justify-items: center;
-  align-items: center;
-}
-
-.welcomeMessage {
-  align-self: end;
+  height: fit-content;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10vh;
 }
 
 .profilePic {
@@ -23,4 +19,3 @@
   opacity: 1;
   transform: scale(1.2, 1.2);
 }
-

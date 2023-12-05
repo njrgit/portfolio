@@ -1,0 +1,15 @@
+.careerContainer {
+  margin-top: 5vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  height: fit-content;
+  display: grid;
+  color: white;
+  gap: 2vh;
+}
+
+.carousel{
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
