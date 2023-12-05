@@ -7,7 +7,6 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./CareerPage.css";
-import Card from "../Common/Card";
 import ImageCard from "../Common/ImageCard";
 
 const CareerPage = () => {

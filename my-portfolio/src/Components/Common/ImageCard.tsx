@@ -1,11 +1,5 @@
 import "./ImageCard.css";
 
-interface Props {
-  header: string;
-  text: string;
-  imgSrc: string;
-}
-
 const ImageCard = () => {
   return (
     <div className="card-item">
