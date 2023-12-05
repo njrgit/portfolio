@@ -7,6 +7,8 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./CareerPage.css";
+import Card from "../Common/Card";
+import ImageCard from "../Common/ImageCard";
 
 const CareerPage = () => {
   return (
@@ -15,22 +17,24 @@ const CareerPage = () => {
         className="carousel"
         naturalSlideWidth={100}
         naturalSlideHeight={100}
-              totalSlides={3}
-              isIntrinsicHeight={true}
+        totalSlides={3}
+        isIntrinsicHeight={true}
       >
         <Slider>
           <Slide index={0}>
-            <img src="Niro_Ravi.jpg" alt="" />
+            <ImageCard />
           </Slide>
           <Slide index={1}>
-            <img src="map.jpg" alt="" />
+            <ImageCard />
           </Slide>
           <Slide index={2}>
-            <img src="NR.png" alt="" />
+            <ImageCard />
           </Slide>
         </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
+        <div className="carousel-button-group">
+          <ButtonBack className="carousel-button">Back 👈</ButtonBack>
+          <ButtonNext className="carousel-button">Next 👉</ButtonNext>
+        </div>
       </CarouselProvider>
     </div>
   );

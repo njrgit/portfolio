@@ -8,8 +8,36 @@
   gap: 2vh;
 }
 
-.carousel{
-    height: auto;
-    margin: 0px;
-    padding: 0px;
+.carousel {
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  border-radius: 15px;
+}
+
+.carousel-button-group {
+  display: grid;
+  gap: 0;
+}
+
+.carousel-button {
+  background-color: white;
+  width: 10vw;
+  border-radius: 12px;
+  font-size: 30px;
+  text-align: center;
+  grid-row: 1/3;
+  justify-self: center;
+  height: 10vh;
+}
+
+.carousel-button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  text-align: center;
 }

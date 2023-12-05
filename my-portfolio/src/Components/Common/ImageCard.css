@@ -1,0 +1,40 @@
+.card-item {
+  display: grid;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: black;
+  opacity: 0.9;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-section {
+  border-left: 1px white solid;
+  text-align: center;
+  display: grid;
+}
+
+.image-card-header {
+  justify-self: center;
+  align-self: start;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.carousel-button-group {
+  margin-top: 2vh;
+}
+
+.image-card-text {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding-left: 2vw;
+  align-self: center;
+}
+
+.image-card-pic {
+  justify-self: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 2vh;
+}
