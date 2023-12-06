@@ -8,8 +8,22 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./CareerPage.css";
 import ImageCard from "../Common/ImageCard";
+import { History } from "../../Data/work_history";
 
 const CareerPage = () => {
+  const listOfHistory = History.map((work, index) => {
+    return (
+      <Slide index={index}>
+        <ImageCard
+          CompanyName={work.CompanyName}
+          ImageName={work.ImageName}
+          JobDescription={work.JobDescription}
+          SkillsUsed={work.SkillsUsed}
+        />
+      </Slide>
+    );
+  });
+
   return (
     <div className="careerContainer">
       <CarouselProvider
@@ -19,17 +33,7 @@ const CareerPage = () => {
         totalSlides={3}
         isIntrinsicHeight={true}
       >
-        <Slider>
-          <Slide index={0}>
-            <ImageCard />
-          </Slide>
-          <Slide index={1}>
-            <ImageCard />
-          </Slide>
-          <Slide index={2}>
-            <ImageCard />
-          </Slide>
-        </Slider>
+        <Slider>{listOfHistory}</Slider>
         <div className="carousel-button-group">
           <ButtonBack className="carousel-button">Back 👈</ButtonBack>
           <ButtonNext className="carousel-button">Next 👉</ButtonNext>

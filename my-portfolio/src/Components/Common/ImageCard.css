@@ -6,12 +6,14 @@
   opacity: 0.9;
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  height: 80vh;
 }
 
 .text-section {
   border-left: 1px white solid;
   text-align: center;
   display: grid;
+  height: inherit;
 }
 
 .image-card-header {
@@ -34,7 +36,6 @@
 
 .image-card-pic {
   justify-self: center;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 2vh;
+  align-self: center;
+  height: 60vh;
 }

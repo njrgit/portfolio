@@ -1,17 +1,20 @@
+import { ICareerInfo } from "../../Interfaces/ICareerInfo";
 import "./ImageCard.css";
 
-const ImageCard = () => {
+const ImageCard = ({
+  CompanyName,
+  ImageName,
+  JobDescription,
+  SkillsUsed,
+}: ICareerInfo) => {
   return (
     <div className="card-item">
-      <img src="NR.png" alt="img" className="image-card-pic" />
+      <img src={ImageName} alt="img" className="image-card-pic" />
       <div className="text-section">
-        <h1 className="image-card-header">Test Header</h1>
-        <p className="image-card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A inventore,
-          consequuntur perferendis molestias nemo rerum voluptatem, voluptatibus
-          suscipit nostrum ut iste ipsa fugiat explicabo assumenda. Doloremque
-          nostrum alias tempore autem?
-        </p>
+        <h1 className="image-card-header">{CompanyName}</h1>
+        <p className="image-card-text">{JobDescription}</p>
+        <h2 className="image-card-header">Skills</h2>
+        <p className="image-card-text">{SkillsUsed}</p>
       </div>
     </div>
   );
