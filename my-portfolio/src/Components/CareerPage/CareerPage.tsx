@@ -8,10 +8,10 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./CareerPage.css";
 import ImageCard from "../Common/ImageCard";
-import { History } from "../../Data/work_history";
+import { CareerHistory } from "../../Data/work_history";
 
 const CareerPage = () => {
-  const listOfHistory = History.map((work, index) => {
+  const listOfHistory = CareerHistory.map((work, index) => {
     return (
       <Slide index={index}>
         <ImageCard

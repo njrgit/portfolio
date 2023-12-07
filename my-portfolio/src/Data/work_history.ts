@@ -1,6 +1,6 @@
 import { ICareerInfo } from "../Interfaces/ICareerInfo"
 
-export const History: ICareerInfo[] = [
+export const CareerHistory: ICareerInfo[] = [
 
     {
         CompanyName: "Universal Music Group",
@@ -20,5 +20,4 @@ export const History: ICareerInfo[] = [
         JobDescription: "Drilling",
         SkillsUsed: ".Net, C#, Selenium"
     }
-
 ]

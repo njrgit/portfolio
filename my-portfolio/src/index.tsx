@@ -10,6 +10,7 @@ import App from "./App";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import CareerPage from "./Components/CareerPage/CareerPage";
+import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/Career",
         element: <CareerPage />,
+      },
+      {
+        path: "/Projects",
+        element: <ProjectsPage />,
       },
     ],
   },
