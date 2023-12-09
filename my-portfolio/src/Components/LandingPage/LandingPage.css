@@ -1,21 +1,25 @@
-.appHeaderContainer {
+.landing-page-container {
   color: white;
   font-size: x-large;
-  height: fit-content;
   display: grid;
-  justify-content: center;
-  align-content: center;
-  margin-top: 10vh;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(80vh, 1fr));
+  justify-items: center;
+  align-items: center;
+  margin: 1em;
 }
 
-.profilePic {
-  width: auto;
+.profile-pic {
   border-radius: 15px;
   opacity: 0.8;
   transition: 2s;
+  height: 30rem;
 }
 
-.profilePic:hover {
-  opacity: 1;
-  transform: scale(1.2, 1.2);
+@media screen and (min-width: 600px) {
+  .profile-pic {
+    grid-row: span 1 / auto;
+    grid-row: span 1 / auto;
+    height: 5rem;
+  }
 }

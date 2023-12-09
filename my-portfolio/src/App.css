@@ -1,9 +1,4 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App {
+.app {
   top: 0;
   left: 0;
   overflow: auto;

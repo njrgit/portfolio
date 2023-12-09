@@ -3,10 +3,8 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
   return (
-    <div className="appHeaderContainer">
-      <Link to={`/home`}>
-        <img className="profilePic pointer" src="NR.png" alt="profilePicture" />
-      </Link>
+    <div className="landing-page-container">
+      <img className="profile-pic" src="NR.png" alt="profilePicture" />
     </div>
   );
 };
