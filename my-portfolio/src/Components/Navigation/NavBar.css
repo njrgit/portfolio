@@ -4,13 +4,10 @@
   flex-wrap: wrap;
   align-items: center;
   height: auto;
-  width: 100vw;
   background-color: black;
   opacity: 0.9;
-  overflow: hidded;
-  top: 0;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid white;
 }
 
@@ -24,10 +21,9 @@
   text-decoration: none;
   justify-self: flex-end;
   font-size: x-large;
-  font-weight: 400;
   margin-right: 2rem;
 }
 
-.nav-links-to-end{
-    margin-left: auto;
+.nav-links-to-end {
+  margin-left: auto;
 }
