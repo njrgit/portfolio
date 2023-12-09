@@ -16,10 +16,3 @@
   height: 30rem;
 }
 
-@media screen and (min-width: 600px) {
-  .profile-pic {
-    grid-row: span 1 / auto;
-    grid-row: span 1 / auto;
-    height: 5rem;
-  }
-}
