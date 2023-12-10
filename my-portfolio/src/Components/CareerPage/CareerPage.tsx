@@ -13,7 +13,7 @@ import { CareerHistory } from "../../Data/work_history";
 const CareerPage = () => {
   const listOfHistory = CareerHistory.map((work, index) => {
     return (
-      <Slide index={index}>
+      <Slide key={index} index={index}>
         <ImageCard
           CompanyName={work.CompanyName}
           ImageName={work.ImageName}
@@ -25,18 +25,17 @@ const CareerPage = () => {
   });
 
   return (
-    <div className="careerContainer">
+    <div className="career-container">
       <CarouselProvider
-        className="carousel"
         naturalSlideWidth={100}
         naturalSlideHeight={100}
-        totalSlides={3}
+        totalSlides={listOfHistory.length}
         isIntrinsicHeight={true}
       >
         <Slider>{listOfHistory}</Slider>
         <div className="carousel-button-group">
-          <ButtonBack className="carousel-button">Back 👈</ButtonBack>
-          <ButtonNext className="carousel-button">Next 👉</ButtonNext>
+          <ButtonBack  className="carousel-button">Back</ButtonBack>
+          <ButtonNext className="carousel-button">Next</ButtonNext>
         </div>
       </CarouselProvider>
     </div>

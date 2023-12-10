@@ -1,21 +1,25 @@
 .image-card-item {
   display: grid;
   border: 1px solid white;
-  border-radius: 15px;
   background-color: black;
   opacity: 0.9;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  height: 80vh;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 1em;
+}
+
+.image-card-pic {
+  justify-self: center;
+  align-self: center;
+  height: 20rem;
+  border-radius: 3rem;
+  grid-column: 1/2;
+  padding: 1em;
 }
 
 .text-section {
   border-left: 1px white solid;
   text-align: center;
   display: grid;
-  height: inherit;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(1, 1fr);
 }
 
 .image-card-company-header {
@@ -24,33 +28,19 @@
   justify-self: center;
 }
 
-.image-card-skills-header {
+.image-card-text {
   grid-row: 2/3;
+  align-self: center;
+}
+
+.image-card-skills-header {
+  grid-row: 3/4;
   grid-column: 1/2;
   justify-self: center;
-}
-
-.carousel-button-group {
-  margin-top: 2vh;
-}
-
-.image-card-text {
-  grid-row: 1/2;
-  grid-column: 1/2;
-  padding-left: 2vw;
-  align-self: center;
 }
 
 .image-card-skills-text {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  padding-left: 2vw;
-  justify-self:center;
-  align-self: center;
-}
-
-.image-card-pic {
+  grid-row: 4/5;
   justify-self: center;
   align-self: center;
-  height: 60vh;
 }
