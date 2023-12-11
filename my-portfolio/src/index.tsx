@@ -11,6 +11,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import CareerPage from "./Components/CareerPage/CareerPage";
 import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
+import ContactMe from "./Components/ContactMePage/ContactMe";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path: "/Projects",
         element: <ProjectsPage />,
       },
+      {
+        path: "/Contact",
+        element: <ContactMe />,
+      }
     ],
   },
 ]);

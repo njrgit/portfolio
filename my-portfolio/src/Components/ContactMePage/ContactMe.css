@@ -1,0 +1,25 @@
+.contact-me-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.contact-card {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  display: grid;
+  gap: 1em;
+  text-align: center;
+  justify-items: center;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.contact-me-pic {
+  height: 15em;
+  border-radius: 15px;
+}
