@@ -13,13 +13,13 @@ const ContactMe = () => {
           ></i>
           <span className="fi fi-gb" style={{paddingRight:"1rem"}}></span>+44 7966697272
         </h2>
-        <h2>
+        {/* <h2>
           <i
             className="fa fa-phone"
             style={{ fontSize: "2rem", paddingRight: "1rem" }}
           ></i>
           <span className="fi fi-ca" style={{paddingRight:"1rem"}}></span>+01 4167353376
-        </h2>
+        </h2> */}
         <h2>
           <a
             style={{ textDecoration: "none", color: "white" }}

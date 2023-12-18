@@ -10,9 +10,9 @@ const ErrorPage = () => {
       <div className="errorMessageDiv">
         <div className="errorContent">
           <h1>
-            Oops, this page does not exist. Please navigate to another page
+            Under construction, please bear with us until we're ready
           </h1>
-          <h1>⛔</h1>
+          <h1>👷</h1>
         </div>
       </div>
     </div>

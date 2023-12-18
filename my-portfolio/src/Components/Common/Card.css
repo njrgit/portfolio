@@ -1,17 +1,17 @@
 .card-item {
   border: 1px solid white;
   border-radius: 15px;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 2em;
+  padding-right: 2em;
   background-color: black;
   opacity: 0.9;
 }
 
 .card-header {
   border-bottom: 1px white solid;
-  padding-bottom: 1vh;
+  padding-bottom: 1em;
 }
 
 .carousel-button-group{
-  margin-top: 2vh;
+  margin-top: 2em;
 }

@@ -6,26 +6,25 @@
 }
 
 .profileFacePicGridItem {
-  grid-column: span 2;
+  grid-column: span 1;
   justify-self: center;
 }
 
 .profileFacePic {
-  height: 30vh;
+  height: 20em;
   border-radius: 15px;
 }
 
-.grid-item{
+.grid-item {
   grid-row: span 1;
   grid-column: span 1;
   align-self: center;
   justify-self: center;
 }
 
-.grid-item-last{
+.grid-item-last {
   grid-row: span 1;
-  grid-column: span 2;
+  grid-column: span 1;
   align-self: center;
   justify-self: center;
 }
-

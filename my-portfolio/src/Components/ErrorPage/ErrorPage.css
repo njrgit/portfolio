@@ -3,6 +3,7 @@
     display: flex;
     color: white;
     justify-content: center;
+    align-content: center;
 }
 
 .errorContent{
@@ -13,10 +14,9 @@
     background-color: black;
     opacity: 0.8;
     border: 1px solid white;
-    height: 15em;
     border-radius: 15px;
-    margin-top: 20em;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    margin-top: 1rem;
+    padding-left: 5em;
+    padding-right: 5em;
     overflow: auto;
 }
